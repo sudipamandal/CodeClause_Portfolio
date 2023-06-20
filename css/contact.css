@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+nav {
+  background-color: #000000;
+  height: 65px;
+  width: 1280px;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+.right {
+  width: 70%;
+}
+.right {
+  width: 70%;
+}
+nav ul li {
+  list-style: none;
+  margin: 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.firstSection {
+  position: absolute;
+  width: 1280px;
+  height: 400px;
+  top: 65px;
+  color: black;
+  background: url("/img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.firstSection .left {
+  margin: 100px;
+}
+.firstSection .left .name {
+  font-size: 54px;
+}
+
+.firstSection .left p {
+  font-size: 36px;
+}
+
+.secondSection {
+  position: absolute;
+  top: 460px;
+  margin-top: 30px;
+  padding: 30px;
+  height: 450px;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.separator {
+  position: absolute;
+  top: 460px;
+  background: black;
+  color: white;
+  height: 65px;
+  width: 1280px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondSection {
+  display: flex;
+  align-items: center;
+}
+.secondSection p {
+  margin-top: 30px;
+}
+.secondSection span {
+  font-weight: 800;
+}
+
+footer {
+  position: absolute;
+  top: 1000px;
+  background: black;
+  color: white;
+  height: 65px;
+  width: 1280px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Design for mobile */
+@media only screen and (max-width: 500px) {
+  nav {
+    height: 65px;
+    width: 375px;
+    justify-content: center;
+    font-size: 10px;
+  }
+
+  .firstSection {
+    width: 375px;
+  }
+  .firstSection .left .name {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .firstSection .left p {
+    font-size: 20px;
+  }
+  .separator {
+    width: 375px;
+    font-size: 15px;
+  }
+  .secondSection {
+    width: 375px;
+  }
+
+  .secondSection div {
+    margin: 2px;
+    font-size: 12px;
+  }
+
+  footer {
+    width: 375px;
+    font-size: 13px;
+  }
+}
